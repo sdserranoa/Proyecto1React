@@ -35,7 +35,7 @@
 }
 
 body {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 html, body {
@@ -68,11 +68,13 @@ footer {
 .hm-jumb {
   margin-right: 5em;
   background-image: url(assets/banner.jpg) !important;
+  background-size: cover;
   color: white;
 }
 
-.btn-conocer{
+.bt-conocer{
   background-color: white !important;
+  border-color: white !important;
   color: #1fcac2 !important; 
 }
 
@@ -82,4 +84,27 @@ footer {
 
 .hm-row {
   margin-right: 5em;
+}
+
+.signup{
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #4a5c6a;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 1.1rem;
+  outline: 0;
+  max-width: 500px;
+  color: white;
+}
+
+.mybtn{
+  border-radius:50px;
+  background-color: #1fcac2 !important;
+  color: white !important;
 }
