@@ -19,7 +19,7 @@ class Home extends Component {
                     <h3 className="hm-txt">Conoce algunos diseños...</h3>
                 </div>
 
-                <Row className="text-centered">
+                <Row className="text-centered hm-row">
                     <Col className="mb-4" lg={3} md={6}>
                         <Card className="h-100">
                             <Card.Img variant="top" src={champions}></Card.Img>
