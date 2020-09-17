@@ -102,7 +102,7 @@ class Register extends Component {
                                         <Form.Label>Correo electronico</Form.Label>
                                         <Form.Control
                                             required
-                                            type="text"
+                                            type="email"
                                             placeholder="Correo electronico"
                                             onChange={this.onEmailChange} />
                                     </Form.Group>
