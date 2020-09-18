@@ -108,3 +108,21 @@ footer {
   background-color: #1fcac2 !important;
   color: white !important;
 }
+
+.ed-title {
+  margin-top: 60px;
+}
+
+.editor {
+  border-radius: 1.1rem;
+  padding: 1rem;
+}
+
+.custom-switch {
+  padding-left: 0px;
+}
+
+.newDesign {
+  border-radius: 1.1rem;
+  padding: 1rem;
+}

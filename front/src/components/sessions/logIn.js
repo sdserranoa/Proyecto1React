@@ -18,11 +18,11 @@ export default class logIn extends Component {
     }
 
     onEmailChange(e) {
-        this.state({ correo: e.target.value })
+        this.setState({ correo: e.target.value })
     }
 
     onPasswordChange(e) {
-        this.state({ password: e.target.value })
+        this.setState({ password: e.target.value })
     }
 
     handleSubmit(e) {
@@ -32,10 +32,9 @@ export default class logIn extends Component {
             email: this.state.correo,
             password: this.state.password
         }
-
-        console.log(process.env.REACT_APP_IP_ADDRESS)
-
         
+        localStorage.setItem('Token', "hola");
+
         fetch("http://" + process.env.REACT_APP_IP_ADDRESS + "/sessions", {
             method: "POST",
             headers: {
