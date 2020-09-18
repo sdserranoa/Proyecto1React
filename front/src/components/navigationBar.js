@@ -17,7 +17,7 @@ class NavigationBar extends Component {
                                 <Nav.Link className="a-white" href="/services">Servicios</Nav.Link>
                             </Nav.Item>
                             <Nav.Item className="hvr-underline-reveal active">
-                                <Nav.Link className="a-white" href="/">Iniciar sesión</Nav.Link>
+                                <Nav.Link className="a-white" href="/login">Iniciar sesión</Nav.Link>
                             </Nav.Item>
                             <Nav.Item className="hvr-underline-reveal active">
                                 <Nav.Link className="a-white" href="/register">Regístrate</Nav.Link>

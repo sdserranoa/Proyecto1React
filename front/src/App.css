@@ -86,7 +86,7 @@ footer {
   margin-right: 5em;
 }
 
-.signup{
+.signup, .signin{
   display: -ms-flexbox;
   display: flex;
   padding: 1rem;

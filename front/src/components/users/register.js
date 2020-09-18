@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Form, Button } from 'react-bootstrap'
+import { Redirect } from 'react-router-dom';
 
 class Register extends Component {
 
@@ -48,12 +49,16 @@ class Register extends Component {
             "password_confirmation": this.state.passwordConf
         }
 
-        fetch(process.env.REACT_APP_IP_ADDRESS,{
+        fetch("http://"+process.env.REACT_APP_IP_ADDRESS+"/users",{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(registration)
+        }).then(res => {
+            if (res.ok) {
+                this.setState({ redirect: true })
+            }
         })
 
         /*
@@ -70,11 +75,18 @@ class Register extends Component {
         */
     }
 
-
+    redirect() {
+        if (this.state.redirect) {
+            return <Redirect to="/login" />
+        } else {
+            return <div></div>
+        }
+    }
 
     render() {
         return (
             <div>
+                {this.redirect()}
                 <Row>
                     <Col>
                     </Col>
